@@ -29,3 +29,8 @@ button {
 button:hover {
     background-color: #866701;
 }
+/* styles.css */
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
