@@ -41,4 +41,41 @@ button:hover {
 h1 {
     font-family: 'Libre Baskerville', serif;
 }
+/* styles.css */
+h1 {
+    font-size: 3rem;
+    color: #333; /* Initial text color */
+    text-align: center;
+    margin-top: 50px;
+    transition: text-shadow 0.3s ease; /* Smooth transition for the glow effect */
+}
+
+h1:hover {
+    text-shadow: 
+        0 0 5px #ffd700, /* Soft gold glow */
+        0 0 10px #ffd700, /* Stronger gold glow */
+        0 0 15px #ffd700, /* Even stronger glow */
+        0 0 20px #ffd700; /* Maximum glow */
+    color: #ffd700; /* Optional: change text color to gold on hover */
+}
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700, 0 0 20px #ffd700;
+    }
+    50% {
+        text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+    }
+    100% {
+        text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700, 0 0 20px #ffd700;
+    }
+}
+h1:hover {
+    text-shadow: 
+        0 0 5px #ffd700,
+        0 0 10px #ffd700,
+        0 0 15px #ffd700,
+        0 0 20px #ffd700;
+    color: #ffd700;
+    transform: scale(1.1); /* Slightly increase the size */
+}
 
